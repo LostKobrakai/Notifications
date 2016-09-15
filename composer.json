@@ -1,6 +1,9 @@
 {
     "name": "lostkobrakai/notifications",
     "description": "Notifications class for ProcessWire",
+    "require": {
+      "php": ">=5.4.0"
+    },
     "autoload": {
     	"psr-4": {
     		"LostKobrakai\\": "src/"

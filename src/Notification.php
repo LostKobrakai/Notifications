@@ -65,6 +65,12 @@ class Notification extends WireData
 		return new static($message, $color);
 	}
 
+	public function get ($key)
+	{
+		if(!in_array($key, ['message', 'color'])) return parent::get($key);
+		return $this->{$key};
+	}
+
 	public function __toString ()
 	{
 		return $this->message . self::DELIMITER . $this->color;
