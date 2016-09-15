@@ -52,7 +52,7 @@ class Notification extends WireData
 	 */
 	public static function add ($message, $color = 'green')
 	{
-		wire('notifications')->add(new static($message, $color));
+		\ProcessWire\wire('notifications')->add(new static($message, $color));
 	}
 
 	/**
