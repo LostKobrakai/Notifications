@@ -1,0 +1,9 @@
+{
+    "name": "lostkobrakai/notifications",
+    "description": "Notifications class for ProcessWire",
+    "autoload": {
+    	"psr-4": {
+    		"LostKobrakai\\": "src/"
+    	}
+    }
+}
